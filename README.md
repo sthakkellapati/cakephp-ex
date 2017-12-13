@@ -1,6 +1,6 @@
 
 
-<!-- toc -->
+<!-- toc ---->
 
 - [CakePHP Sample App on OpenShift](#cakephp-sample-app-on-openshift)
   * [OpenShift Considerations](#openshift-considerations)
@@ -104,7 +104,7 @@ In order to access the example CakePHP home page, which contains application sta
 
 It will also be necessary to update your application to talk to your database back-end. The app/Config/database.php file used by CakePHP was set up in such a way that it will accept environment variables for your connection information that you pass to it. Once an administrator has created a MySQL database service for you to connect with you can add the following environment variables to your deploymentConfig to ensure all your cakephp-example pods have access to these environment variables. Note: the cakephp-mysql.json template creates the DB service and environment variables for you.
 
-You will then need to rebuild the application.  This is done via either a `oc start-build` command, or through the web console, or a webhook trigger in github initiating a build after the code changes are pushed.
+You will then need to rebuild the application.  This is done via either a `oc start-build` command, or through the web console, or a webhook trigger in github initiating a build after the code changes are pushed
 
 ### Hot Deploy
 
